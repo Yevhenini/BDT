@@ -1,0 +1,33 @@
+.color1{
+    background-color: aqua;
+    padding:200px;
+    animation-name: slide;
+    animation-timeline: scroll();
+}
+.color2{
+    background-color: rgb(64, 199, 199);
+    padding:200px;
+    animation-name: slidein;
+    animation-timeline: scroll();
+}
+.color3{
+    background-color: rgb(65, 148, 148);
+    color:rgb(255, 255, 255);
+    padding: 200px;
+    animation-name: slidein;
+    animation-timeline: scroll();
+}
+@keyframes slide{
+    to{
+        background-color: rgb(152, 6, 6);
+    }    
+}
+@keyframes slidein {
+    from {
+      transform: translateX(0%);
+    }
+  
+    to {
+      transform: translateX(100%);
+    }
+  }
